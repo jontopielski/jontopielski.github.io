@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4eb499bd.chunk.css",
+    "main.js": "/static/js/main.e7c7f1dd.chunk.js",
+    "main.js.map": "/static/js/main.e7c7f1dd.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.9c9c41ef.js",
+    "runtime-main.js.map": "/static/js/runtime-main.9c9c41ef.js.map",
+    "static/js/2.f856eadb.chunk.js": "/static/js/2.f856eadb.chunk.js",
+    "static/js/2.f856eadb.chunk.js.map": "/static/js/2.f856eadb.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.e4ff633ec5500e780ddde3f469644cae.js": "/precache-manifest.e4ff633ec5500e780ddde3f469644cae.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.4eb499bd.chunk.css.map": "/static/css/main.4eb499bd.chunk.css.map",
+    "static/js/2.f856eadb.chunk.js.LICENSE.txt": "/static/js/2.f856eadb.chunk.js.LICENSE.txt",
+    "static/media/DitherCat.png": "/static/media/DitherCat.f837c4fe.png",
+    "static/media/GameCurator.png": "/static/media/GameCurator.abd8dbe9.png",
+    "static/media/NewGrounds_Logo.png": "/static/media/NewGrounds_Logo.b22cedf9.png",
+    "static/media/Warpdoor.png": "/static/media/Warpdoor.9115af7b.png",
+    "static/media/logo.svg": "/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9c9c41ef.js",
+    "static/js/2.f856eadb.chunk.js",
+    "static/css/main.4eb499bd.chunk.css",
+    "static/js/main.e7c7f1dd.chunk.js"
+  ]
+}
