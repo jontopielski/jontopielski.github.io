@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.b731070a.chunk.css",
-    "main.js": "/static/js/main.a5610f33.chunk.js",
-    "main.js.map": "/static/js/main.a5610f33.chunk.js.map",
+    "main.css": "/static/css/main.5aaf7126.chunk.css",
+    "main.js": "/static/js/main.29d233ae.chunk.js",
+    "main.js.map": "/static/js/main.29d233ae.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.9c9c41ef.js",
     "runtime-main.js.map": "/static/js/runtime-main.9c9c41ef.js.map",
-    "static/js/2.f2c3d29f.chunk.js": "/static/js/2.f2c3d29f.chunk.js",
-    "static/js/2.f2c3d29f.chunk.js.map": "/static/js/2.f2c3d29f.chunk.js.map",
+    "static/js/2.6c42734f.chunk.js": "/static/js/2.6c42734f.chunk.js",
+    "static/js/2.6c42734f.chunk.js.map": "/static/js/2.6c42734f.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.144d6de1f258b39f3dbc0b0f57434716.js": "/precache-manifest.144d6de1f258b39f3dbc0b0f57434716.js",
+    "precache-manifest.365a5c3f9e6c30994633cd6a4e771737.js": "/precache-manifest.365a5c3f9e6c30994633cd6a4e771737.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.b731070a.chunk.css.map": "/static/css/main.b731070a.chunk.css.map",
-    "static/js/2.f2c3d29f.chunk.js.LICENSE.txt": "/static/js/2.f2c3d29f.chunk.js.LICENSE.txt",
+    "static/css/main.5aaf7126.chunk.css.map": "/static/css/main.5aaf7126.chunk.css.map",
+    "static/js/2.6c42734f.chunk.js.LICENSE.txt": "/static/js/2.6c42734f.chunk.js.LICENSE.txt",
     "static/media/CatPicRaw.png": "/static/media/CatPicRaw.9fa2c48b.png",
     "static/media/DitherCat.png": "/static/media/DitherCat.f837c4fe.png",
     "static/media/GameCurator.png": "/static/media/GameCurator.abd8dbe9.png",
@@ -21,8 +21,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.9c9c41ef.js",
-    "static/js/2.f2c3d29f.chunk.js",
-    "static/css/main.b731070a.chunk.css",
-    "static/js/main.a5610f33.chunk.js"
+    "static/js/2.6c42734f.chunk.js",
+    "static/css/main.5aaf7126.chunk.css",
+    "static/js/main.29d233ae.chunk.js"
   ]
 }
