@@ -93,6 +93,10 @@ body {
   display: inline;
 }
 
+.footer li a {
+  text-decoration: none;
+}
+
 .footer ul {
   padding: 0;
 }
