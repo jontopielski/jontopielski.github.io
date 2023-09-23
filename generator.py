@@ -1,58 +1,72 @@
 from bs4 import BeautifulSoup
 import json
 
-GAMES_INDEX = 0
-SMALLER_GAMES_INDEX = 1
+def inject_game_cards():
+    games_html = get_games_list_html()
+    inject_html_into_file_at_target(games_html, 'base.html', 'index.html', 'gameData')
 
-def process_files():
-    with open('template.html', 'r', encoding='utf-8') as file:
-        existing_html = file.read()
+def get_games_list_html():
+    game_template = get_html_at_file_location('templates/game_panel.html')
+    game_data = {
+        "data/games.json": [],
+        "data/smaller_games.json": [],
+        "data/tools.json": []
+    }
+    for json_key in game_data:
+        with open(json_key, 'r') as json_file:
+            data_list = json.load(json_file)
+            game_data[json_key] = data_list
+    generated_html = get_populated_game_html(game_data["data/games.json"], game_template)
+    generated_html += get_populated_game_html(game_data["data/smaller_games.json"], game_template)
+    generated_html += get_populated_game_html(game_data["data/tools.json"], game_template)
+    return ''.join(generated_html)
 
-    soup = BeautifulSoup(existing_html, 'html.parser')
-    target_div = soup.find('div', id='gameData')
-
-    game_template = """
-    <div class="gridContainer">
-        <a href={data_2}><div class="preview" style='background-image: url({data_1});'></div></a>
-        <a class="link" href={data_2}><center>{data_0}</center></a>
-    </div>
-    """
-
-    data_list = []
-    json_files = ["data/games.json", "data/smaller_games.json"]
-
-    for file_name in json_files:
-        with open(file_name, 'r') as json_file:
-            data = json.load(json_file)
-            data_list.append(data['data'])
-
-    if target_div:
-        for child in target_div.find_all(): 
-            child.decompose()
-
-        generated_html = []
-        generated_html += get_all_html_from_data_at_index(data_list, GAMES_INDEX, game_template)
-        generated_html += get_all_html_from_data_at_index(data_list, SMALLER_GAMES_INDEX, game_template)
-
-        concatenated_html = ''.join(generated_html)
-
-        custom_soup = BeautifulSoup(concatenated_html, 'html.parser')
-        target_div.append(custom_soup)
-
-        with open('index.html', 'w', encoding='utf-8') as file:
-            file.write(soup.prettify())
-    else:
-        print("Target div not found in the existing HTML.")
-
-def get_all_html_from_data_at_index(data_list, index, template):
-    html_list = []
-    for game_idx, game_entry in enumerate(data_list[index]):
-        custom_html = template
-        for idx, data in enumerate(data_list[index][game_idx]):
+def get_populated_game_html(game_data, template):
+    games_html = []
+    for game_idx, game_entry in enumerate(game_data):
+        next_template = template
+        for idx, data in enumerate(game_data[game_idx]):
             placeholder = f"{{data_{idx}}}"
-            custom_html = custom_html.replace(placeholder, json.dumps(data_list[index][game_idx][data], indent=4))
-        html_list.append(custom_html)
-    return html_list
+            next_template = next_template.replace(placeholder, json.dumps(game_data[game_idx][data], indent=4))
+        games_html.append(next_template)
+    return games_html
+
+def inject_html_into_file_at_target(inject_html, source, destination, target_id):
+    with open(source, 'r', encoding='utf-8') as file:
+        current_html = file.read()
+
+    soup = BeautifulSoup(current_html, 'html.parser')
+    target_div = soup.find('div', id=target_id)
+
+    if not target_div:
+        print("Target div not found in the existing HTML.")
+        return
+    
+    for child in target_div.find_all(): 
+        child.decompose()
+    
+    custom_soup = BeautifulSoup(inject_html, 'html.parser')
+
+    target_div.append(custom_soup)
+
+    with open(destination, 'w', encoding='utf-8') as file:
+        file.write(soup.prettify())
+
+def get_html_at_file_location(file_location):
+    with open(file_location, 'r', encoding='utf-8') as file:
+        return file.read()
+
+def inject_footers():
+    footer_html = get_html_at_file_location('templates/footer.html')
+    inject_html_into_file_at_target(footer_html, 'index.html', 'index.html', 'footer')
+    inject_html_into_file_at_target(footer_html, 'about.html', 'about.html', 'footer')
+
+def inject_headers():
+    header_html = get_html_at_file_location('templates/header.html')
+    inject_html_into_file_at_target(header_html, 'index.html', 'index.html', 'header')
+    inject_html_into_file_at_target(header_html, 'about.html', 'about.html', 'header')
 
 if __name__ == "__main__":
-    process_files()
+    inject_game_cards()
+    inject_footers()
+    inject_headers()

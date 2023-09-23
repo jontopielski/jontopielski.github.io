@@ -1,0 +1,62 @@
+[
+	{
+		"name": "Cave Buster",
+		"image_location": "covers/cave-buster.png",
+		"link": "https://jontopielski.itch.io/cave-buster"
+	},
+	{
+		"name": "Castle Game Jam Text Adventure",
+		"image_location": "covers/castle-game-jam-text-adventure.png",
+		"link": "https://jontopielski.itch.io/castle-game-jam-text-adventure"
+	},
+	{
+		"name": "Cats on Mars",
+		"image_location": "covers/cats-on-mars.png",
+		"link": "https://jontopielski.itch.io/cats-on-mars"
+	},
+	{
+		"name": "Hearts Ablaze",
+		"image_location": "covers/hearts-ablaze.png",
+		"link": "https://jontopielski.itch.io/hearts-ablaze"
+	},
+	{
+		"name": "Ghost Roulette",
+		"image_location": "covers/ghost-roulette.png",
+		"link": "https://jontopielski.itch.io/ghost-roulette"
+	},
+	{
+		"name": "Portal Bot",
+		"image_location": "covers/portal-bot.png",
+		"link": "https://jontopielski.itch.io/portal-bot"
+	},
+	{
+		"name": "Spinny Discs",
+		"image_location": "covers/spinny-discs.png",
+		"link": "https://jontopielski.itch.io/spinny-discs"
+	},
+	{
+		"name": "Rewindware",
+		"image_location": "covers/rewindware.png",
+		"link": "https://jontopielski.itch.io/rewindware"
+	},
+	{
+		"name": "This Call May Be Recorded",
+		"image_location": "covers/this-call-may-be-recorded.png",
+		"link": "https://jontopielski.itch.io/this-call-may-be-recorded"
+	},
+	{
+		"name": "Keyspace",
+		"image_location": "covers/keyspace.png",
+		"link": "https://jontopielski.itch.io/keyspace"
+	},
+	{
+		"name": "Ludum Creare",
+		"image_location": "covers/ludum-creare.png",
+		"link": "https://jontopielski.itch.io/ludum-creare"
+	},
+	{
+		"name": "A Midclubber Night's Dream",
+		"image_location": "covers/a-midclubber-nights-dream.png",
+		"link": "https://jontopielski.itch.io/a-midclubber-nights-dream"
+	}
+]

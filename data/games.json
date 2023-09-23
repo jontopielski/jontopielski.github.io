@@ -1,39 +1,37 @@
-{
-	"data": [
-		{
-			"name": "Thwack",
-			"image_location": "covers/thwack.png",
-			"link": "https://jontopielski.itch.io/thwack"
-		},
-		{
-			"name": "Feather Park",
-			"image_location": "covers/feather-park.png",
-			"link": "https://jontopielski.itch.io/feather-park"
-		},
-		{
-			"name": "Into the Deep Web",
-			"image_location": "covers/into-the-deep-web.png",
-			"link": "https://jontopielski.itch.io/into-the-deep-web"
-		},
-		{
-			"name": "The Lesser Evil",
-			"image_location": "covers/the-lesser-evil.png",
-			"link": "https://jontopielski.itch.io/the-lesser-evil"
-		},
-		{
-			"name": "Echo Chamber",
-			"image_location": "covers/echo-chamber.png",
-			"link": "https://jontopielski.itch.io/echo-chamber"
-		},
-		{
-			"name": "Flipjack",
-			"image_location": "covers/flipjack.png",
-			"link": "https://jontopielski.itch.io/flipjack"
-		},
-		{
-			"name": "Puzzle Sigma",
-			"image_location": "covers/puzzle-sigma.png",
-			"link": "https://jontopielski.itch.io/puzzle-sigma"
-		}
-	]
-}
+[
+	{
+		"name": "Thwack",
+		"image_location": "covers/thwack.png",
+		"link": "https://jontopielski.itch.io/thwack"
+	},
+	{
+		"name": "Feather Park",
+		"image_location": "covers/feather-park.png",
+		"link": "https://jontopielski.itch.io/feather-park"
+	},
+	{
+		"name": "Into the Deep Web",
+		"image_location": "covers/into-the-deep-web.png",
+		"link": "https://jontopielski.itch.io/into-the-deep-web"
+	},
+	{
+		"name": "The Lesser Evil",
+		"image_location": "covers/the-lesser-evil.png",
+		"link": "https://jontopielski.itch.io/the-lesser-evil"
+	},
+	{
+		"name": "Echo Chamber",
+		"image_location": "covers/echo-chamber.png",
+		"link": "https://jontopielski.itch.io/echo-chamber"
+	},
+	{
+		"name": "Flipjack",
+		"image_location": "covers/flipjack.png",
+		"link": "https://jontopielski.itch.io/flipjack"
+	},
+	{
+		"name": "Puzzle Sigma",
+		"image_location": "covers/puzzle-sigma.png",
+		"link": "https://jontopielski.itch.io/puzzle-sigma"
+	}
+]
