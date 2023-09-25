@@ -2,32 +2,25 @@ from bs4 import BeautifulSoup
 import json
 
 def inject_game_cards():
-    games_html = get_games_list_html()
-    inject_html_into_file_at_target(games_html, 'base.html', 'index.html', 'gameData')
+    games_data = get_games_list_html('data/games.json')
+    smaller_games_data = get_games_list_html('data/smaller_games.json')
+    tool_data = get_games_list_html('data/tools.json')
+    all_game_data = ''.join(games_data + smaller_games_data + tool_data)
+    inject_html_into_file_at_target(all_game_data, 'base.html', 'index.html', 'gameData')
 
-def get_games_list_html():
+def get_games_list_html(file_location):
     game_template = get_html_at_file_location('templates/game_panel.html')
-    game_data = {
-        "data/games.json": [],
-        "data/smaller_games.json": [],
-        "data/tools.json": []
-    }
-    for json_key in game_data:
-        with open(json_key, 'r') as json_file:
-            data_list = json.load(json_file)
-            game_data[json_key] = data_list
-    generated_html = get_populated_game_html(game_data["data/games.json"], game_template)
-    generated_html += get_populated_game_html(game_data["data/smaller_games.json"], game_template)
-    generated_html += get_populated_game_html(game_data["data/tools.json"], game_template)
-    return ''.join(generated_html)
+    with open(file_location, 'r') as json_file:
+        data_list = json.load(json_file)
+    return ''.join(get_populated_game_html(data_list, game_template))
 
 def get_populated_game_html(game_data, template):
     games_html = []
     for game_idx, game_entry in enumerate(game_data):
-        next_template = template
-        for idx, data in enumerate(game_data[game_idx]):
-            placeholder = f"{{data_{idx}}}"
-            next_template = next_template.replace(placeholder, json.dumps(game_data[game_idx][data], indent=4))
+        next_template = template.format(
+            data_0=game_data[game_idx]['name'],
+            data_1=game_data[game_idx]['image_location'],
+            data_2=game_data[game_idx]['link'])
         games_html.append(next_template)
     return games_html
 
@@ -68,5 +61,3 @@ def inject_headers():
 
 if __name__ == "__main__":
     inject_game_cards()
-    inject_footers()
-    inject_headers()

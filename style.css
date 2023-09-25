@@ -1,34 +1,41 @@
 body {
-  background-color: #355a7a;
+  background-color: #203853;
   color: #e6e5e0;
   font-family: "Anonymous Pro";
 }
 
+.wrapper {
+  width: min(1500px, 100%);
+  margin: 0px auto;
+}
+
 .header {
+  border-bottom: 2px dashed #e6e5e0;
   width: 100%;
-  border: 4px double #97a9c4;
   display: flex;
   align-items: flex-end;
-  justify-content: center;
-  margin-bottom: 25px;
+  justify-content: left;
+  margin-bottom: 20px;
 }
 
 .header li {
   list-style: none;
   display: inline-block;
+  font-size: 24px;
 }
 
 .header a {
-  margin-right: 10px;
-  margin-left: 10px;
-  font-size: 22px;
-  font-weight: bold;
+  margin-right: 15px;
   color: #e6e5e0;
   text-decoration: none;
 }
 
+.header img {
+  vertical-align: middle;
+}
+
 .navs {
-  transition: color 0.1s ease;
+  transition: color 0.0s ease;
 }
 
 .navs:hover {
@@ -39,13 +46,8 @@ body {
   padding: 0;
 }
 
-.wrapper {
-  width: min(1200px, 100%);
-  margin: 0px auto;
-}
-
 .about img {
-  width: max(150px, 15%);
+  width: max(150px, 10.0%);
   border-radius: 50%;
   margin-top: 10px;
   margin-right: 50px;
@@ -54,7 +56,10 @@ body {
 }
 
 .link {
+  font-size: 18px;
   color: #e6e5e0;
+  text-underline-offset: 4px;
+  text-decoration: underline 2px dotted #c29f2d;
 }
 
 #title {
@@ -66,15 +71,17 @@ body {
   color: #e6e5e0;
 }
 
-#introDiv h2 {
+#introDiv h3 {
+  font-size: 20px;
   color: #e3deac;
 }
 
 .grid {
   width: 100%;
   display: grid;
-  gap: 25px 25px;
+  gap: 30px 30px;
   grid-template-columns: repeat(5, 1fr);
+  margin-bottom: 25px;
 }
 
 .grid p {
@@ -84,7 +91,7 @@ body {
 .preview {
   margin: 0px auto;
   width: 100%;
-  height: 20vh;
+  height: 22.5vh;
 	background-position: center;
 	background-size: cover;
   transition: transform .1s;
@@ -107,13 +114,10 @@ body {
 }
 
 .footer {
-  border: 4px double #97a9c4;
   width: 100%;
   display: flex;
   align-items: flex-end;
-  justify-content: center;
-  margin-top: 25px;
-  padding-top: 0px;
+  justify-content: left;
 }
 
 .footer li {
