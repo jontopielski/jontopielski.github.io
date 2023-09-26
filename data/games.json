@@ -25,6 +25,11 @@
 		"link": "https://jontopielski.itch.io/echo-chamber"
 	},
 	{
+		"name": "Cave Buster",
+		"image_location": "covers/cave-buster.png",
+		"link": "https://jontopielski.itch.io/cave-buster"
+	},
+	{
 		"name": "Flipjack",
 		"image_location": "covers/flipjack.png",
 		"link": "https://jontopielski.itch.io/flipjack"
@@ -33,5 +38,15 @@
 		"name": "Puzzle Sigma",
 		"image_location": "covers/puzzle-sigma.png",
 		"link": "https://jontopielski.itch.io/puzzle-sigma"
+	},
+	{
+		"name": "Castle Game Jam Text Adventure",
+		"image_location": "covers/castle-game-jam-text-adventure.png",
+		"link": "https://jontopielski.itch.io/castle-game-jam-text-adventure"
+	},
+	{
+		"name": "Cats on Mars",
+		"image_location": "covers/cats-on-mars.png",
+		"link": "https://jontopielski.itch.io/cats-on-mars"
 	}
 ]

@@ -1,11 +1,12 @@
 body {
   background-color: #203853;
   color: #e6e5e0;
-  font-family: "Anonymous Pro";
+  font-family: "Kreon";
+  margin: 0px;
 }
 
 .wrapper {
-  width: min(1500px, 100%);
+  width: min(1400px, 100%);
   margin: 0px auto;
 }
 
@@ -43,15 +44,15 @@ body {
 }
 
 .header ul {
-  padding: 0;
+  padding: 0px;
+  margin: 15px 0px;
 }
 
 .about img {
-  width: max(150px, 10.0%);
+  width: max(125px, 7.5%);
   border-radius: 50%;
-  margin-top: 10px;
-  margin-right: 50px;
-  margin-bottom: 20px;
+  margin-top: 0px;
+  margin-right: 25px;
   float: left;
 }
 
@@ -71,15 +72,23 @@ body {
   color: #e6e5e0;
 }
 
-#introDiv h3 {
+#introDiv p {
   font-size: 20px;
   color: #e3deac;
+  line-height: 1.5;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#introDiv h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .grid {
   width: 100%;
   display: grid;
-  gap: 30px 30px;
+  gap: clamp(15px, 5vw, 25px) clamp(25px, 5vw, 35px);
   grid-template-columns: repeat(5, 1fr);
   margin-bottom: 25px;
 }
@@ -101,12 +110,26 @@ body {
   transform: translateY(-10px);
 }
 
+.smallPreview {
+  margin: 0px auto;
+  width: 100%;
+  height: 10vh;
+	background-position: center;
+	background-size: cover;
+  transition: transform .1s;
+}
+
+.smallPreview:hover {
+  transform: translateY(-10px);
+}
+
 .gridContainer center {
   margin-top: 5px;
 }
 
 .socials {
   transition: transform .1s;
+  margin-right: 5px;
 }
 
 .socials:hover {
@@ -130,5 +153,6 @@ body {
 }
 
 .footer ul {
-  padding: 0;
+  padding: 0px;
+  margin-top: 10px;
 }

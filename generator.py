@@ -2,14 +2,15 @@ from bs4 import BeautifulSoup
 import json
 
 def inject_game_cards():
-    games_data = get_games_list_html('data/games.json')
-    smaller_games_data = get_games_list_html('data/smaller_games.json')
-    tool_data = get_games_list_html('data/tools.json')
-    all_game_data = ''.join(games_data + smaller_games_data + tool_data)
-    inject_html_into_file_at_target(all_game_data, 'base.html', 'index.html', 'gameData')
+    games_html = get_games_list_html('data/games.json', 'templates/large_panel.html')
+    smaller_games_html = get_games_list_html('data/smaller_games.json', 'templates/small_panel.html')
+    all_games_html = ''.join(games_html + smaller_games_html)
+    inject_html_into_file_at_target(all_games_html, 'base.html', 'index.html', 'gameData')
+    tools_html = ''.join(get_games_list_html('data/tools.json', 'templates/large_panel.html'))
+    inject_html_into_file_at_target(tools_html, 'base.html', 'tools.html', 'gameData')
 
-def get_games_list_html(file_location):
-    game_template = get_html_at_file_location('templates/game_panel.html')
+def get_games_list_html(file_location, template_location):
+    game_template = get_html_at_file_location(template_location)
     with open(file_location, 'r') as json_file:
         data_list = json.load(json_file)
     return ''.join(get_populated_game_html(data_list, game_template))
