@@ -1,6 +1,6 @@
 ---
 link: blog/ludum-dare-50-retrospective.html
-title: Ludum Dare 50 Retrospective
+title: Ludum Dare 50 retrospective
 date: April 27 2022
 ---
 Since my first ever game jam roughly 3 years ago, I’ve learned a lot. And yet, things still don’t seem to be getting much easier. Shouldn’t they be getting easier?

@@ -60,6 +60,21 @@ body {
   float: left;
 }
 
+#blogPost {
+  width: min(800px, 100%);
+  line-height: 1.5;
+  margin: 0px auto;
+}
+
+#blogPost p {
+  font-size: 22px;
+}
+
+#blogPost a {
+  font-weight: normal;
+  color: #c29f2d;
+}
+
 #blogLinks {
   margin: 0px;
   padding: 0px;

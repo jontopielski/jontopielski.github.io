@@ -22,6 +22,13 @@ def inject_blog_links():
     blog_links_html = ''.join(blog_links_html)
     inject_html_into_file_at_target(blog_links_html, 'base.html', 'blog.html', 'blogLinks', 'ul')
 
+def create_blog_pages():
+    for blog_path in get_all_blog_paths():
+        with open(blog_path, 'r', encoding='utf-8') as file:
+            markdown_content = file.readlines()
+        yaml_data = get_yaml_object_from_markdown_content(markdown_content)
+        create_blog_page(blog_path, yaml_data['link'])
+
 def create_blog_page(markdown_file, destination):
     md = markdown_it.MarkdownIt()
     with open(markdown_file, 'r', encoding='utf-8') as md_file:
@@ -36,20 +43,22 @@ def create_blog_page(markdown_file, destination):
 def make_links_relative_to_directory_level(html_file):
     with open(html_file, 'r', encoding='utf-8') as file:
         soup = BeautifulSoup(file, 'html.parser')
-
+    
     link_elements = soup.find_all('a', href=True) + soup.find_all('link', href=True)
-
     for link in link_elements:
         href = link['href']
         if not href.startswith('http') and not href.startswith('#'):
             link['href'] = '../' + href
-    
     img_elements = soup.find_all('img', href=False)
-
     for img in img_elements:
         src = img['src']
         if not href.startswith('http') and not href.startswith('#'):
             img['src'] = '../' + src
+    script_elements = soup.find_all('script', href=False)
+    for script in script_elements:
+        src = script['src']
+        if not href.startswith('http') and not href.startswith('#'):
+            script['src'] = '../' + src
 
     with open(html_file, 'w', encoding='utf-8') as file:
         file.write(soup.prettify())
@@ -58,7 +67,8 @@ def get_all_blog_paths():
     blog_dirs = []
     for dir_name in os.listdir('posts'):
         for filename in os.listdir(os.path.join('posts', dir_name)):
-            blog_dirs.append(os.path.join('posts', dir_name, filename))
+            if filename.endswith(".md"):
+                blog_dirs.append(os.path.join('posts', dir_name, filename))
     return blog_dirs[::-1]
 
 def get_yaml_object_from_markdown_content(markdown_lines):
@@ -97,21 +107,15 @@ def get_populated_game_html(game_data, template):
 def inject_html_into_file_at_target(inject_html, source, destination, target_id, element_type='div'):
     with open(source, 'r', encoding='utf-8') as file:
         current_html = file.read()
-
     soup = BeautifulSoup(current_html, 'html.parser')
     target_div = soup.find(element_type, id=target_id)
-
     if not target_div:
         print("Target div not found in the existing HTML.")
         return
-    
     for child in target_div.find_all(): 
         child.decompose()
-    
     custom_soup = BeautifulSoup(inject_html, 'html.parser')
-
     target_div.append(custom_soup)
-
     with open(destination, 'w', encoding='utf-8') as file:
         file.write(soup.prettify())
 
@@ -133,4 +137,4 @@ if __name__ == "__main__":
     inject_game_cards()
     inject_art_panels()
     inject_blog_links()
-    create_blog_page('posts/01-pixel-art-journey/pixel-art-journey.md', 'blog/pixel-art-journey.html')
+    create_blog_pages()
