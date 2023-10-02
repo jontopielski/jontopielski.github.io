@@ -43,3 +43,12 @@ links.forEach(link => {
     link.appendChild(textNode);
   });
 });
+
+function adjustFontSize() {
+  const textElement = document.querySelectorAll(".navs");
+  const fontSize = window.innerWidth < 400 ? '20px' : '24px';
+  textElement.style.fontSize = fontSize;
+}
+
+window.addEventListener('load', adjustFontSize);
+window.addEventListener('resize', adjustFontSize);
