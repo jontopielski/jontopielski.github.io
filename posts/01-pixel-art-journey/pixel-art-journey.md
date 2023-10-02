@@ -6,7 +6,7 @@ date: March 3 2022
 <h1 style="margin-bottom: 0px;">Pixel art journey</h1>
 <h3 style="color: #97a9c4; margin-top: 0px;">March 3 2022</h3>
 
-This month, art was my primary focus. These are some of the pieces I’m most proud of:
+I’m frustrated with being mediocre at art and depending on others. If I’m going to be successful as a game developer and jack-of-all-trades kind of guy, I need to improve my art skills. That’s why this month, art was my primary focus. These are some of the pieces I’m most proud of:
 
 <div style="text-align: center;">
     <div style="display: inline-block;">
@@ -26,7 +26,7 @@ My primary mode of improving at art is by doing [pixel dailies](https://twitter.
 On the game development side, I tinkered with an expanded version of Into the Deep Web. However, I soon ran into many core issues that can best be summarized as: beginning a project with too many unknowns. It is a dangerous assumption to think you will figure things out along the way, because eventually those issues will surface and you’ll be in a predicament.
 
 <div style="text-align: center;">
-    <img class="artPanel" src="blog_images/random_dither.gif" width="100%">
+    <img class="artPanel" src="posts/01-pixel-art-journey/random-dither.gif" width="100%">
 </div>
 
 This is a gif of the random event screen, which uses a random dither technique that I learned from <a href="https://twitter.com/TRASEVOL_DOG">Remy Devaux</a> in his blog post <a href="https://trasevol.dog/2017/02/01/doodle-insights-2-procedural-dithering-part-1/">here</a>.
@@ -42,13 +42,13 @@ I worked from Mexico City this month and consider it to be a great place to work
 
 <div style="text-align: center;">
     <div style="display: inline-block;">
-        <img class="artPanel" src="blog_images/cdmx_coffee.jpeg" height="175px" width="225px">
+        <img class="artPanel" src="posts/01-pixel-art-journey/cdmx-coffee.jpeg" height="175px" width="225px">
     </div>
     <div style="display: inline-block;">
-        <img class="artPanel" src="blog_images/orinoco_taco.jpeg" height="175px" width="225px">
+        <img class="artPanel" src="posts/01-pixel-art-journey/orinoco-taco.jpeg" height="175px" width="225px">
     </div>
     <div style="display: inline-block;">
-        <img class="artPanel" src="blog_images/cdmx_car.jpeg" height="175px" width="225px">
+        <img class="artPanel" src="posts/01-pixel-art-journey/cdmx-car.jpeg" height="175px" width="225px">
     </div>
 </div>
 

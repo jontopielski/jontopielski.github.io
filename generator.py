@@ -2,16 +2,16 @@ from bs4 import BeautifulSoup
 import re, os, json, markdown, yaml, markdown_it
 
 def inject_game_cards():
-    games_html = get_games_list_html('data/games.json', 'templates/large_panel.html')
-    smaller_games_html = get_games_list_html('data/smaller_games.json', 'templates/small_panel.html')
+    games_html = get_games_list_html('data/games.json', 'templates/large-panel.html')
+    smaller_games_html = get_games_list_html('data/smaller_games.json', 'templates/small-panel.html')
     all_games_html = ''.join(games_html + smaller_games_html)
     inject_html_into_file_at_target(all_games_html, 'base.html', 'index.html', 'gameData')
-    tools_html = ''.join(get_games_list_html('data/tools.json', 'templates/large_panel.html'))
+    tools_html = ''.join(get_games_list_html('data/tools.json', 'templates/large-panel.html'))
     inject_html_into_file_at_target(tools_html, 'base.html', 'tools.html', 'gameData')
 
 def inject_blog_links():
     blog_links_html = []
-    blog_link_template = get_html_at_file_location('templates/blog_link.html')
+    blog_link_template = get_html_at_file_location('templates/blog-link.html')
     sorted_blog_paths = get_all_blog_paths()
     for blog_path in sorted_blog_paths:
         with open(blog_path, 'r', encoding='utf-8') as file:
@@ -80,7 +80,7 @@ def get_yaml_object_from_markdown_content(markdown_lines):
 
 def inject_art_panels():
     art_html = []
-    art_template = get_html_at_file_location('templates/art_panel.html')
+    art_template = get_html_at_file_location('templates/art-panel.html')
     for filename in os.listdir('art'):
         file_path = os.path.join('art', filename)
         next_template = art_template.format(data_0=file_path)

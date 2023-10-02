@@ -1,52 +1,52 @@
 [
 	{
 		"name": "Thwack",
-		"image_location": "covers/thwack.png",
+		"image_location": "game-covers/thwack.png",
 		"link": "https://jontopielski.itch.io/thwack"
 	},
 	{
 		"name": "Feather Park",
-		"image_location": "covers/feather-park.png",
+		"image_location": "game-covers/feather-park.png",
 		"link": "https://jontopielski.itch.io/feather-park"
 	},
 	{
 		"name": "Into the Deep Web",
-		"image_location": "covers/into-the-deep-web.png",
+		"image_location": "game-covers/into-the-deep-web.png",
 		"link": "https://jontopielski.itch.io/into-the-deep-web"
 	},
 	{
 		"name": "The Lesser Evil",
-		"image_location": "covers/the-lesser-evil.png",
+		"image_location": "game-covers/the-lesser-evil.png",
 		"link": "https://jontopielski.itch.io/the-lesser-evil"
 	},
 	{
 		"name": "Echo Chamber",
-		"image_location": "covers/echo-chamber.png",
+		"image_location": "game-covers/echo-chamber.png",
 		"link": "https://jontopielski.itch.io/echo-chamber"
 	},
 	{
 		"name": "Cave Buster",
-		"image_location": "covers/cave-buster.png",
+		"image_location": "game-covers/cave-buster.png",
 		"link": "https://jontopielski.itch.io/cave-buster"
 	},
 	{
 		"name": "Flipjack",
-		"image_location": "covers/flipjack.png",
+		"image_location": "game-covers/flipjack.png",
 		"link": "https://jontopielski.itch.io/flipjack"
 	},
 	{
 		"name": "Puzzle Sigma",
-		"image_location": "covers/puzzle-sigma.png",
+		"image_location": "game-covers/puzzle-sigma.png",
 		"link": "https://jontopielski.itch.io/puzzle-sigma"
 	},
 	{
 		"name": "Castle Game Jam Text Adventure",
-		"image_location": "covers/castle-game-jam-text-adventure.png",
+		"image_location": "game-covers/castle-game-jam-text-adventure.png",
 		"link": "https://jontopielski.itch.io/castle-game-jam-text-adventure"
 	},
 	{
 		"name": "Cats on Mars",
-		"image_location": "covers/cats-on-mars.png",
+		"image_location": "game-covers/cats-on-mars.png",
 		"link": "https://jontopielski.itch.io/cats-on-mars"
 	}
 ]

@@ -25,3 +25,21 @@ document.addEventListener('keydown', (event) => {
         modal.innerHTML = "";
     }
 });
+
+const links = document.querySelectorAll('a');
+
+links.forEach(link => {
+  const range = document.createRange();
+  range.selectNodeContents(link);
+
+  const textNodes = Array.from(range.extractContents().childNodes);
+  textNodes.forEach(textNode => {
+    if (textNode.nodeType === Node.TEXT_NODE) {
+      textNode.textContent = textNode.textContent.trim();
+    }
+  });
+
+  textNodes.forEach(textNode => {
+    link.appendChild(textNode);
+  });
+});

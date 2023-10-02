@@ -1,12 +1,12 @@
 [
 	{
 		"name": "Stacked Sprite Viewer",
-		"image_location": "covers/stacked-sprite-viewer.png",
+		"image_location": "game-covers/stacked-sprite-viewer.png",
 		"link": "https://jontopielski.itch.io/stacked-sprite-viewer"
 	},
 	{
 		"name": "Stacked Sprite Visualizer",
-		"image_location": "covers/stacked-sprite-visualizer.png",
+		"image_location": "game-covers/stacked-sprite-visualizer.png",
 		"link": "https://github.com/jontopielski/aseprite-stacked-sprite-visualizer"
 	}
 ]

@@ -3,4 +3,19 @@ link: blog/focus-on-health-not-productivity-tricks.html
 title: Focus on health, not productivity tricks
 date: May 10 2023
 ---
+<h1 style="margin-bottom: 0px;">Focus on health, not productivity tricks</h1>
+<h3 style="color: #97a9c4; margin-top: 0px;">May 10 2023</h3>
+
 For the first time in a long time, my brain feels like it’s actually working as intended. If I tell myself I need to buy toothpaste tomorrow, tomorrow comes, and I can recall that I need to buy toothpaste. Little things don’t seem to fall through the cracks anymore and I feel like I’m paying attention a lot more to everything going on around me.
+
+Why is it that my brain is suddenly working again? At the start of this year I decided I was going to try and focus on motivation in a new way: by developing the inner self rather than the outer self.
+
+The literature around motivation and productivity is heavily swayed towards micro-optimizations like zero-inboxing or trello board usage or any other “life hack” that seems to improve your productivity by a few percentage points here and there. After trying so many of these tricks and reading so many books about this stuff, I’ve realized that I’ve been fighting the wrong war this entire time. It’s like buying better running shoes so you can get to the office faster. Yes, technically it has a net positive impact but you’re optimizing the wrong thing.
+
+What I’ve done over the last 5-6 months is the following: I cut out all alcohol from my diet. I lost 10-15 pounds and regained a chin. I’ve exercised for at least 30 minutes, mostly running, for an average of 5 days per week. I go to bed without a phone or a laptop anywhere near by and read before bed. I use nasal strips to increase my air flow while sleeping. I limit myself to just one cup of coffee per day. I focus on eating vegetables whenever I can, and do blood tests to see if I’m deficient in anything. I happen to be deficient in Vitamin D, which doesn’t surprise me one bit.
+
+I’ve learned to enjoy being by myself, alone, without noise or distractions for long periods of time. I can walk for 45 minutes just in my own thoughts without feeling overwhelmed. It has helped me plenty of times come up with new ideas or interesting things to do, whether locally or with my career.
+
+I believe these positive changes in my health have had a much bigger impact in my ability to work than any productivity hack has in the past because now when I get to my computer, I feel the urge to want to work on interesting things. I’m not tricked to. I don’t want to open YouTube. I just want to work.
+
+And that’s the difference that focusing on health has had for me, as opposed to following cheap tricks. I believe this focus is what led to the completion of my first non-jam, commercial project, [Thwack](https://jontopielski.itch.io/thwack), which was completed with no deadline, just a desire to see a larger project through to the end.
