@@ -4,7 +4,6 @@ const modal = document.querySelector(".modal");
 galleryImages.forEach((image) => {
     image.addEventListener("click", () => {
         modal.style.display = "block";
-
         const enlargedImage = document.createElement("img");
         enlargedImage.src = image.src;
         enlargedImage.classList.add("enlargedImage");
@@ -45,10 +44,26 @@ links.forEach(link => {
 });
 
 function adjustFontSize() {
-  const textElement = document.querySelectorAll(".navs");
+  const textElements = document.querySelectorAll(".navs");
   const fontSize = window.innerWidth < 400 ? '20px' : '24px';
-  textElement.style.fontSize = fontSize;
+  textElements.forEach(function (textElement) {
+    textElement.style.fontSize = fontSize;
+  });
 }
 
 window.addEventListener('load', adjustFontSize);
 window.addEventListener('resize', adjustFontSize);
+
+function adjustGrid() {
+  const gridElement = document.querySelector('.grid');
+  const viewportWidth = window.innerWidth;
+
+  if (viewportWidth <= 1000) {
+    gridElement.style.gridTemplateColumns = 'repeat(auto-fill, minmax(160px, 1fr))';
+  } else {
+    gridElement.style.gridTemplateColumns = 'repeat(5, 1fr)';
+  }
+}
+
+window.addEventListener('load', adjustGrid);
+window.addEventListener('resize', adjustGrid);

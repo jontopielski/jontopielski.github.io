@@ -137,9 +137,6 @@ body {
   gap: clamp(15px, 5vw, 25px) clamp(25px, 5vw, 35px);
   grid-template-columns: repeat(5, 1fr);
   margin-bottom: 25px;
-  @media (max-width: 768px) {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  }
 }
 
 .grid p {
