@@ -59,7 +59,7 @@ function adjustGrid() {
   const viewportWidth = window.innerWidth;
 
   if (viewportWidth <= 1000) {
-    gridElement.style.gridTemplateColumns = 'repeat(auto-fill, minmax(160px, 1fr))';
+    gridElement.style.gridTemplateColumns = 'repeat(auto-fill, minmax(150px, 1fr))';
   } else {
     gridElement.style.gridTemplateColumns = 'repeat(5, 1fr)';
   }
