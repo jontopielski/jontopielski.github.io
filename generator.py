@@ -1,5 +1,5 @@
 from bs4 import BeautifulSoup
-import re, os, json, markdown, yaml, markdown_it
+import re, os, sys, json, markdown, yaml, markdown_it
 
 def inject_game_cards():
     games_html = get_games_list_html('data/games.json', 'templates/large-panel.html')
@@ -133,8 +133,20 @@ def inject_headers():
     inject_html_into_file_at_target(header_html, 'index.html', 'index.html', 'header')
     inject_html_into_file_at_target(header_html, 'about.html', 'about.html', 'header')
 
+def clean_generated_files():
+    generated_pages = ['art.html', 'blog.html', 'tools.html', 'index.html']
+    for page in generated_pages:
+        os.remove(page)
+    
+    os.chdir('blog')
+    for file in os.listdir():
+        os.remove(file)
+
 if __name__ == "__main__":
-    inject_game_cards()
-    inject_art_panels()
-    inject_blog_links()
-    create_blog_pages()
+    if '--clean' in sys.argv:
+        clean_generated_files()
+    else:
+        inject_game_cards()
+        inject_art_panels()
+        inject_blog_links()
+        create_blog_pages()
