@@ -1,7 +1,7 @@
 ---
 link: blog/joining-a-3-month-programming-retreat.html
 title: Joining a 3-month programming retreat
-date: Oct 11 2023
+date: October 11 2023
 ---
 <h1 style="margin-bottom: 0px;">Joining a 3-month programming retreat</h1>
 <h3 style="color: #97a9c4; margin-top: 0px;">October 11 2023</h3>
