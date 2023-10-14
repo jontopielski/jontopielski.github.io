@@ -1,7 +1,8 @@
 const galleryImages = document.querySelectorAll(".artPanel");
 const modal = document.querySelector(".modal");
 
-galleryImages.forEach((image) => {
+if (galleryImages) {
+  galleryImages.forEach((image) => {
     image.addEventListener("click", () => {
         modal.style.display = "block";
         const enlargedImage = document.createElement("img");
@@ -9,21 +10,24 @@ galleryImages.forEach((image) => {
         enlargedImage.classList.add("enlargedImage");
         modal.appendChild(enlargedImage);
     });
-});
+  });
+}
 
-modal.addEventListener("click", (event) => {
+if (modal) {
+  modal.addEventListener("click", (event) => {
     if (event.target === modal) {
         modal.style.display = "none";
         modal.innerHTML = "";
     }
-});
+  });
 
-document.addEventListener('keydown', (event) => {
-    if (event.key === 'Escape') {
+  document.addEventListener('keydown', (event) => {
+    if (modal && event.key === 'Escape') {
         modal.style.display = "none";
         modal.innerHTML = "";
     }
-});
+  });
+}
 
 const links = document.querySelectorAll('a');
 
@@ -44,10 +48,12 @@ links.forEach(link => {
 });
 
 function adjustFontSize() {
-  const textElements = document.querySelectorAll(".navs");
-  const fontSize = window.innerWidth < 400 ? '20px' : '24px';
-  textElements.forEach(function (textElement) {
-    textElement.style.fontSize = fontSize;
+  requestAnimationFrame(() => {
+    const textElements = document.querySelectorAll(".navs");
+    const fontSize = window.innerWidth < 400 ? '20px' : '24px';
+    textElements.forEach(function (textElement) {
+      textElement.style.fontSize = fontSize;
+    });
   });
 }
 
@@ -57,7 +63,9 @@ window.addEventListener('resize', adjustFontSize);
 function adjustGrid() {
   const gridElement = document.querySelector('.grid');
   const viewportWidth = window.innerWidth;
-
+  if (!gridElement) {
+    return;
+  }
   if (viewportWidth <= 1000) {
     gridElement.style.gridTemplateColumns = 'repeat(auto-fill, minmax(150px, 1fr))';
   } else {
