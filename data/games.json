@@ -10,6 +10,11 @@
 		"link": "https://jontopielski.itch.io/feather-park"
 	},
 	{
+		"name": "Oware",
+		"image_location": "game-covers/oware.png",
+		"link": "https://jontopielski.itch.io/oware"
+	},
+	{
 		"name": "Into the Deep Web",
 		"image_location": "game-covers/into-the-deep-web.png",
 		"link": "https://jontopielski.itch.io/into-the-deep-web"
@@ -43,10 +48,5 @@
 		"name": "Castle Game Jam Text Adventure",
 		"image_location": "game-covers/castle-game-jam-text-adventure.png",
 		"link": "https://jontopielski.itch.io/castle-game-jam-text-adventure"
-	},
-	{
-		"name": "Cats on Mars",
-		"image_location": "game-covers/cats-on-mars.png",
-		"link": "https://jontopielski.itch.io/cats-on-mars"
 	}
 ]

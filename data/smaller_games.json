@@ -1,5 +1,10 @@
 [
 	{
+		"name": "Cats on Mars",
+		"image_location": "game-covers/cats-on-mars.png",
+		"link": "https://jontopielski.itch.io/cats-on-mars"
+	},
+	{
 		"name": "Hearts Ablaze",
 		"image_location": "game-covers/hearts-ablaze.png",
 		"link": "https://jontopielski.itch.io/hearts-ablaze"
@@ -43,10 +48,5 @@
 		"name": "A Midclubber Night's Dream",
 		"image_location": "game-covers/a-midclubber-nights-dream.png",
 		"link": "https://jontopielski.itch.io/a-midclubber-nights-dream"
-	},
-	{
-		"name": "Tip of the Icebug",
-		"image_location": "game-covers/tip-of-the-icebug.png",
-		"link": "https://jontopielski.itch.io/tip-of-the-icebug"
 	}
 ]

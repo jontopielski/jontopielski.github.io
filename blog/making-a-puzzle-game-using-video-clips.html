@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="Jon Topielski's personal site!" name="description"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <link href="https://fonts.googleapis.com/css?family=Kreon:400,700" rel="stylesheet" type="text/css"/>
+  <link href="../etc/favicon.ico" rel="icon" type="image/x-icon"/>
+  <title>
+   Jon Topielski
+  </title>
+  <link href="../style.css" media="all" rel="stylesheet" type="text/css"/>
+ </head>
+ <body>
+  <div class="wrapper">
+   <div class="header" id="header">
+    <ul>
+     <li>
+      <a href="../index.html">
+       <img src="../etc/earth.gif"/>
+      </a>
+     </li>
+     <li>
+      <div class="navs">
+       <a href="../index.html">
+        games
+       </a>
+      </div>
+     </li>
+     <li>
+      <div class="navs">
+       <a href="../tools.html">
+        tools
+       </a>
+      </div>
+     </li>
+     <li>
+      <div class="navs">
+       <a href="../art.html">
+        art
+       </a>
+      </div>
+     </li>
+     <li>
+      <div class="navs">
+       <a href="../blog.html">
+        blog
+       </a>
+      </div>
+     </li>
+     <li>
+      <div class="navs">
+       <a href="../about.html">
+        about
+       </a>
+      </div>
+     </li>
+    </ul>
+   </div>
+   <ul id="blogLinks">
+   </ul>
+   <div id="blogPost">
+    <h1 style="margin-bottom: 0px;">
+     The making of Oware
+    </h1>
+    <h3 style="color: #97a9c4; margin-top: 0px;">
+     November 16 2023
+    </h3>
+    <p>
+     --
+    </p>
+    <p>
+     Intro
+    </p>
+    <p>
+     I distinctly remember feeling divided on the game Her Story when I first played it a few years ago. I was sold on the cryptic story and the unique gameplay but I was a bit frustrated with the lack of an overall goal in the game.
+    </p>
+    <p>
+     Two months ago, I decided to participate in a game jam called FMV (Full Motion Video) Jam NYC, where the goal was to make a game that uses video footage in some way. The game that first came to mind for me was Her Story, although I remember feeling divided on it when I first played it because I thought the story and gameplay were novel and interesting, but I was a bit frustrated at times because I felt that the game lacked a clear gameplay goal. Thinking of this, I wondered if there was a way I could make something similar but in a way that alleviated the "clear goal" issue that I felt when I played it.
+    </p>
+    <p>
+     Fast forward to September 2023, I decided to participate in a game jam called FMV Jam NYC. FMV stands for "Full Motion Video" which basically means a game that involves video footage in some way. The game that I immediately thought back to was Her Story since it left such a positive impression on me, but I wondered if there was a way I could make something similar but in a way that alleviates the thing that frustrated me - namely, the lack of a clear gameplay goal.
+    </p>
+    <p>
+     In addition to wanting to add a clear goal to my FMV game, I also thought a lot about how to balance the dynamism of player choice with the static and unchanging nature of videos and footage. In keeping with my initial inspiration of Her Story, the idea I landed on was a game in which you watch video clips that hide specific letters. You, as the player, have to decide which letter this video clip pertains to. That's where the player choice comes in. For example, if there's a video clip of a person dancing in their room, the letter might be D. Or a clip with a person saying "One a day keeps the doctor away!" might be the letter A (for apples).
+    </p>
+    <p>
+     I wanted to talk about
+    </p>
+    <p>
+     Why I made this
+    </p>
+    <p>
+     How I did the video effect
+    </p>
+    <p>
+     Iterations
+    </p>
+    <p>
+     Conclusion
+    </p>
+    <p>
+     --
+    </p>
+    <p>
+     I recently released Oware, a puzzle game where you watch short video clips and have to determine what letter each clip is hiding. It was my first foray into using video footage in a video game and while I think I did some things right, I also feel like there are some things I would have done differently. In this blog post, I'm going to discuss a bit about the game's development, what I think went well, and what I think I would do differently the next time around.
+    </p>
+    <p>
+     In terms of the game's development, there were a lot of iterations. I constantly tested the game whenever I reached a milestone to see if the game was working or not. The initial version was made for an in-person game jam called FMV Jam NYC and was live-tested when there were only 6 letters to try and solve. I saw someone play the game who then asked his wife to help him with some of the clues and this was when I realized the game might actually work.
+    </p>
+    <p>
+     The second big iteration came after I had written and recorded 42 video clips that I thought would be the final clips for the game, until I showed the game at an NYU playtest event and realized all the hints that were obvious to me were in fact cryptic to most people. On top of this, when I shared the game idea to a friend on Discord, he told me I should really consider adding an overall narrative to the game. I agreed.
+    </p>
+    <p>
+     So then came the big rewrite of the game where I picked words that would support an overall narrative and theme, and decided to take the game in a slightly spookier direction. It's still solving letter clues via video but there's small undertones of something deeper going on throughout. Looking back, I'm glad I was able to recognize the importance of playtesting and gathering feedback, as well as the fact that I was receptive enough to listen to and ultimately incorporate peoples' ideas.
+    </p>
+    <p>
+     As far as stuff I'm not as happy about, I think my "acting" performance could have been better. In fact, I think it would have been better if I had asked several of my friends to record parts in this game. It would have added a lot more variance to the clips and I had thought about doing this, but ultimately rejected it in lieu of all the work that would have been involved in assembling people, recording parts in proper lighting that support the shaders I used, and checking each clip to see if it was sufficiently recorded. Not to mention if I needed to rerecord parts for any reason later down the road.. But if I were to do it again, I'd try to do these things.
+    </p>
+    <p>
+     While I'm happy that I added a narrative theme, I'm a bit iffy on the actual implementation of the ending. It involves the player's real filesystem. It doesn't do anything malicious or even close, but it still makes me anxious about whether players would be okay with what I do for narrative purposes. Looking back, I think I probably could have come up with an alternate ending that didn't need to go down this route.
+    </p>
+    <p>
+     That said, overall I'm proud of the project for being a departure from my standard game. It's at least trying to do something different from a gameplay and narrative context and that's valuable regardless of the overall reception of the game.
+    </p>
+    <p>
+     --
+    </p>
+    <p>
+     The balance of the videos is good, but not great. Some are just plain too easy. I was a bit scared when I had my initial playtest and saw that the hints were too hard and overindexed on making them easy. Next time I'll try to be cognizant of the fact that I shouldn't lean too hard in the other direction when receiving initial playtesting.
+    </p>
+    <p>
+     I'm proud of this project for a couple of reasons. For one, I used video footage as part of the gameplay, which is something I've never done before. I also did all the assets myself, including the writing and recording of video clips, which is, again, outside of my comfort zone. I think the game is striving to do something somewhat interesting and novel in that the player watches video clips exclusively to try and guess specific letters that are hidden in the context of the video clips.
+    </p>
+    <p>
+     I'm not super happy with my acting performance in this game. I don't know the first thing about voice acting or acting but I think overall my performances weren't that varied and overall were pretty monotone. If I were to do this again, I probably would have asked friends to fill in various parts or maybe take a few improv classes first.
+    </p>
+    <p>
+     The ending is really hit or miss for me. Without spoiling anything, the game takes a sort of meta turn that involves the player's filesystem. Of course it doesn't do anything malicious, but even having something that pokes around this area makes me very anxious about how players would respond to this. I think with a bit more thinking, I probably could have come up with an alternate ending that didn't need to go this route.
+    </p>
+    <p>
+     The balance in the videos is good, but not great. This is actually the fourth iteration of the game and a lot of the videos were rewritten and rerecorded, but I still feel like some videos are a bit too easy. I had a few videos that were too cryptic and that confused people I playtested with, so I leaned a bit too hard on making the video clips easy and I may have gone a bit too far in that direction.
+    </p>
+    <p>
+     Overall, even though this game is a bit of a departure from my standard games, I'm happy that I at least ventured out a little and "went for it", even if it might not land with a lot of folks.
+    </p>
+    <p>
+     --
+    </p>
+    <p>
+     I really enjoyed the game Her Story but I had some reservations with regards to the gameplay. The story is absolutely top notch and discovering the plot was extremely rewarding. However, there didn't really seem to be a real "ending" to the game or strong goal (other than discovering the plot), which left me having a sort of unresolved feeling when I eventually stopped playing.
+    </p>
+    <p>
+     I decided to take these general feelings into a game jam I participated in back in September of 2023 called the "FMV Jam NYC", which was actually an in-person game jam held at The Lower Case in Chinatown, NYC. I wanted to create something a bit more "video gamey" that uses the video medium, but I struggled quite a bit when it came to how to create player choice with something as static as videos. They can't change once they're made, which gave me that much more respect for Her Story once I came to terms with the challenges of using video footage in an interactive (changing) medium.
+    </p>
+    <p>
+     Focusing on how the player can make choices, I landed on an initial prototype where the player watches a clip and has to figure out ("decide") what secret letter the clip is hiding. So every clip maps 1:1 to a letter. For example, if the clip is a video of me saying "One a day keeps the doctor away", the letter might be "A" because I'm referring to the old adage: "An apple a day keeps the doctor away" (which is probably untrue in actuality).
+    </p>
+    <p>
+     So there's choice with regards to the player "choosing" which letter the clip refers to. Nice. But I wanted to take it a bit further than that. To encourage additional player choices, I decided each "letter" would have 2 clips that would be assigned to that letter: an easy video and a hard video. You watch the hard video first and then you decide whether you want to "download" the easier one, which costs you a finite resource: your internet bandwidth. If your internet bandwidth runs out, you can no longer watch videos!
+    </p>
+    <p>
+     I playtested this version at the end of the weekend of the FMV jam with one secret word and 6 secret letters, culminating in 12 clips (2 for each video). Upon testing this, there were a couple of problems. For one, most people couldn't solve the letter with just the hard clip plainly because it was, well, too hard. And they tended to immediately "download" the easier clip in order to ease their frustration, not really paying any mind to the "cost" that the easier clip incurred.
+    </p>
+    <p>
+     So people don't really care about managing their limited video watching budget was the first issue. The second issue came to me later when I started to expand the game: I don't want to write, perform, and test TWO videos for every letter I want to have in the game because that's double the work than just making one well-balanced video. In other words, rather than having a harder and easier video hint, why not just consolidate them into one medium-challenging well-made hint video? That's less work and less confusion because you don't have to teach the resource of bandwidth as well to the player.
+    </p>
+    <p>
+     The problem is this ultimately did reduce the amount of "player choice" that ends up being utilized. I ended up being okay with this tradeoff because it meant I could make more videos and put more content into the game without having to double my workload. This was a tradeoff I was willing to make, especially since this was my first foray into adding real life video footage into a game and it was more important to me to just see that something get made and put out there than to keep trodding along trying to perfect my initial vision of maximizing player choice.
+    </p>
+    <p>
+     As far as the content of the videos go, you can imagine the content of the videos being short 5-10 second clips of me on my webcam acting out or saying a clue that leads the player to think of a specific letter. If I want them to say "B", I might say the phrase, "Let it BE" and annunciate the "BE", thus leading the player to select "B". Or if I want to do an alternative of this clue, I might mimic a Shakespearen soliliquy and say "To blank or not to blank". Or I might take my finger and point to the right side of the screen and expect the player to map my finger to the interface that displays the letter "B" somewhere. These are just a few examples of how I thought about coming up with clues.
+    </p>
+    <p>
+     After writing out 42 of these hints that spell out a variety of words, I recorded all the clips through my webcam and put them into the game. This was the 2nd iteration of the game, which was done around mid October. I brought this version to an in-person playtest at NYU during their "playtest thursdays" and watched someone play the game from start to end. Needless to say, the clues were way too hard. Here are some examples of clues I had from that version:
+    </p>
+    <p>
+     Me doing bicep curls with some weights
+Me saying "An eye for an eye, a tooth for a tooth"
+Me snapping 9 times
+    </p>
+    <p>
+     If you'd like to take a moment to try and guess what these are, go ahead. The first one was (spoiler: X) for exercise. Yeah, pretty big stretch. The second one was (spoiler: H), referring to Hammurabi's code. The third is meant to be (spoiler: I) because it's the ninth letter in the alphabet. These were definitely not intuitive enough.
+    </p>
+    <p>
+     One thing that the playtester said after playing was that he noticed there was a sort of "spooky" vibe to the game and if I wanted, perhaps taking it more into that direction might be worthwhile. I thought about this for a bit and initially discarded this, but ultimately ended up sort of leaning in this direction a little bit for the plot.
+    </p>
+    <p>
+     So afterwards, I rewrote most of the hints in the game and recorded them all again. Then, I messaged my friend Prifurin and told him about my game. He said "you got to spice this up". With the video clips and words, he suggested I try to wrap some sort of story around the game rather than it just being about solving letters and then closing the game. Sadly, I agreed with him.
+    </p>
+    <p>
+     I struggled with coming up with a story that would neatly explain the behaviors involved in both the making of the videos and the one watching them (the player). Who recorded these videos? Why? Why are they spelling out random letter clues? And why are you watching them and solving them? Without spoiling anything, I think I came up with a sufficient enough solution that actually answers all of these questions, but it does involve doing something a bit "malicious". Not actually malicious (mostly fictitiously malicious) and there is a disclaimer on the game page, but the game does do something seemingly like a virus at some point in the game. I won't go into any more detail than that!
+    </p>
+    <p>
+     So, I wrote all new words and rewrote and rerecorded all the video parts again and started hating the process of making this game, haha. Now at the third iteration, I programmed the ending and had my real life friend Wes try out the game. It worked a bit better this time with the spooky undertone and I wrote down all the clips that he didn't quite understand, or that were a bit too easy.
+    </p>
+    <p>
+     I had another friend, Thoof, playtest the game, this time with the full ending and it was a really successful playtest because I got some good detailed feedback on specific videos that could be reworked as well as on the overall impact of the ending. I combined the list of clips that needed to be reworked from this playtest, as well as the ones from my real life friend's playtest, and made the final revisions on clips for the version that would ultimately be released.
+    </p>
+    <p>
+     At long last, the game was finally done after three iterations. I decided I'd score the game myself, as it didn't really need a lot of music so I went with short 10 second clips that looped and gave the game a general ambiance. I finally replaced the placeholder Windows 95 artwork (that's definitely not legal to use) with some rotated stacked sprites that I whipped up. I'm not super happy with these banners, but I was just ready to finish this project and move on.
+    </p>
+    <p>
+     So what started as a simple weekend prototype ended up being an on-and-off backburner project that took 2 months to finish, mostly due to the playtest iterations, overall change in direction and tone of the game, and time it took to write and record actual video clips. I'm happy with the final product, although I have some reservations with the "acting" and whether or not the ending worked for people.
+    </p>
+    <p>
+     This was the first game in a long time that I did everything for - the art, music, writing, performances, sound effects, programming, and design. As such a performance and writing heavy project, I learned a lot because those are definitely NOT my strong suits but I definitely hope to improve and incorporate these elements more in my future projects.
+    </p>
+   </div>
+   <div class="grid" id="gameData">
+   </div>
+   <div class="modal">
+   </div>
+  </div>
+  <script src="../script.js">
+  </script>
+ </body>
+</html>
