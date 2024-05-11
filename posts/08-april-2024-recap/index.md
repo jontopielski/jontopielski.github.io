@@ -15,11 +15,11 @@ April was my return to game dev after a 2-month hiatus while I moved back to San
 It was fun to work on a project that didn't require a lot of content - Desktop Daemon is literally just a stacked sprite and some 2d animations. It trots around your screen and occasionally does spirals. You can pet it.
 
 <div style="text-align: center;">
-    <div style="display: inline-block; padding-right: 100px;">
-        <img class="artPanel" src="posts\08-april-2024-recap\sweetest-sound-pod.png" width="400px">
+    <div style="display: inline-block; padding-left: 25px;">
+        <img class="artPanel" src="posts\08-april-2024-recap\sweetest-sound-pod.png" width="100%">
     </div>
-    <div style="display: inline-block; padding-left: 100px;">
-        <img class="artPanel" src="posts\08-april-2024-recap\sweetest-sound-room.png" width="400px">
+    <div style="display: inline-block; padding-right: 25px;">
+        <img class="artPanel" src="posts\08-april-2024-recap\sweetest-sound-room.png" width="100%">
     </div>
 </div>
 
@@ -28,11 +28,11 @@ I also started working on a project for the [Playdate](https://play.date/) calle
 I've also resumed my "longer term" project (still pretty short) - a game about sleep called "Pillow Fight". I'm hoping to release it in early June as a submission to [Glow Up Game Jam](https://itch.io/jam/glow-up-game-jam), a game jam that I'm also hosting! It will likely be a free release at first with a follow up patch that adds more gameplay and then might cost a few bucks. Stay tuned!
 
 <div style="text-align: center;">
-    <div style="display: inline-block; padding-right: 100px;">
-        <img class="artPanel" src="posts\08-april-2024-recap\sleep-game-room.png" width="400px">
+    <div style="display: inline-block; padding-left: 25px;">
+        <img class="artPanel" src="posts\08-april-2024-recap\sleep-game-room.png" width="75%">
     </div>
-    <div style="display: inline-block; padding-left: 100px;">
-        <img class="artPanel" src="posts\08-april-2024-recap\sleep-game-heat.png" width="400px">
+    <div style="display: inline-block; padding-right: 25px;">
+        <img class="artPanel" src="posts\08-april-2024-recap\sleep-game-heat.png" width="75%">
     </div>
 </div>
 
