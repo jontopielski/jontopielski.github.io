@@ -8,5 +8,10 @@
 		"name": "Stacked Sprite Visualizer",
 		"image_location": "game-covers/stacked-sprite-visualizer.png",
 		"link": "https://github.com/jontopielski/aseprite-stacked-sprite-visualizer"
+	},
+	{
+		"name": "Desktop Daemon",
+		"image_location": "game-covers/desktop-daemon.png",
+		"link": "https://jontopielski.itch.io/desktop-daemon"
 	}
 ]
