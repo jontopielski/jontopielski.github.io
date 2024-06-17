@@ -1,5 +1,10 @@
 [
 	{
+		"name": "Pillow Fight",
+		"image_location": "game-covers/pillow-fight.png",
+		"link": "https://jontopielski.itch.io/pillow-fight"
+	},
+	{
 		"name": "Thwack",
 		"image_location": "game-covers/thwack.png",
 		"link": "https://jontopielski.itch.io/thwack"
@@ -10,14 +15,14 @@
 		"link": "https://jontopielski.itch.io/feather-park"
 	},
 	{
-		"name": "Oware",
-		"image_location": "game-covers/oware.png",
-		"link": "https://jontopielski.itch.io/oware"
-	},
-	{
 		"name": "Into the Deep Web",
 		"image_location": "game-covers/into-the-deep-web.png",
 		"link": "https://jontopielski.itch.io/into-the-deep-web"
+	},
+	{
+		"name": "Oware",
+		"image_location": "game-covers/oware.png",
+		"link": "https://jontopielski.itch.io/oware"
 	},
 	{
 		"name": "The Lesser Evil",
@@ -43,10 +48,5 @@
 		"name": "Puzzle Sigma",
 		"image_location": "game-covers/puzzle-sigma.png",
 		"link": "https://jontopielski.itch.io/puzzle-sigma"
-	},
-	{
-		"name": "Castle Game Jam Text Adventure",
-		"image_location": "game-covers/castle-game-jam-text-adventure.png",
-		"link": "https://jontopielski.itch.io/castle-game-jam-text-adventure"
 	}
 ]
