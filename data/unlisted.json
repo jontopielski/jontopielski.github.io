@@ -3,5 +3,10 @@
 		"name": "Ludum Creare",
 		"image_location": "game-covers/ludum-creare.png",
 		"link": "https://jontopielski.itch.io/ludum-creare"
+	},
+	{
+		"name": "Keyspace",
+		"image_location": "game-covers/keyspace.png",
+		"link": "https://jontopielski.itch.io/keyspace"
 	}
 ]

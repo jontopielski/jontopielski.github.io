@@ -54,6 +54,11 @@ def make_links_relative_to_directory_level(html_file):
         src = img['src']
         if not href.startswith('http') and not href.startswith('#'):
             img['src'] = '../' + src
+    source_elements = soup.find_all('source', href=False)
+    for elem in source_elements:
+        src = elem['src']
+        if not href.startswith('http') and not href.startswith('#'):
+            elem['src'] = '../' + src
     script_elements = soup.find_all('script', href=False)
     for script in script_elements:
         src = script['src']
