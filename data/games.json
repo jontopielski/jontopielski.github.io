@@ -40,13 +40,13 @@
 		"link": "https://jontopielski.itch.io/cave-buster"
 	},
 	{
-		"name": "Flipjack",
-		"image_location": "game-covers/flipjack.png",
-		"link": "https://jontopielski.itch.io/flipjack"
-	},
-	{
 		"name": "Puzzle Sigma",
 		"image_location": "game-covers/puzzle-sigma.png",
 		"link": "https://jontopielski.itch.io/puzzle-sigma"
+	},
+	{
+		"name": "Flipjack",
+		"image_location": "game-covers/flipjack.png",
+		"link": "https://jontopielski.itch.io/flipjack"
 	}
 ]

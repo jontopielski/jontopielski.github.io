@@ -1,5 +1,10 @@
 [
 	{
+		"name": "Snow Flow",
+		"image_location": "game-covers/snow-flow.png",
+		"link": "https://jontopielski.itch.io/snow-flow"
+	},
+	{
 		"name": "The Sweetest Sound",
 		"image_location": "game-covers/the-sweetest-sound.png",
 		"link": "https://jontopielski.itch.io/the-sweetest-sound"
@@ -33,11 +38,6 @@
 		"name": "Spinny Discs",
 		"image_location": "game-covers/spinny-discs.png",
 		"link": "https://jontopielski.itch.io/spinny-discs"
-	},
-	{
-		"name": "Rewindware",
-		"image_location": "game-covers/rewindware.png",
-		"link": "https://jontopielski.itch.io/rewindware"
 	},
 	{
 		"name": "This Call May Be Recorded",

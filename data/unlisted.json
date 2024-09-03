@@ -8,5 +8,10 @@
 		"name": "Keyspace",
 		"image_location": "game-covers/keyspace.png",
 		"link": "https://jontopielski.itch.io/keyspace"
+	},
+	{
+		"name": "Rewindware",
+		"image_location": "game-covers/rewindware.png",
+		"link": "https://jontopielski.itch.io/rewindware"
 	}
 ]
