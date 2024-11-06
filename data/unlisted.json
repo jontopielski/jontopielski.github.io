@@ -13,5 +13,10 @@
 		"name": "Rewindware",
 		"image_location": "game-covers/rewindware.png",
 		"link": "https://jontopielski.itch.io/rewindware"
+	},
+	{
+		"name": "Spinny Discs",
+		"image_location": "game-covers/spinny-discs.png",
+		"link": "https://jontopielski.itch.io/spinny-discs"
 	}
 ]

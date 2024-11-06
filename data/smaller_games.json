@@ -10,6 +10,11 @@
 		"link": "https://jontopielski.itch.io/the-sweetest-sound"
 	},
 	{
+		"name": "Candy Bag",
+		"image_location": "game-covers/candy-bag.png",
+		"link": "https://jontopielski.itch.io/candy-bag"
+	},
+	{
 		"name": "Castle Game Jam Text Adventure",
 		"image_location": "game-covers/castle-game-jam-text-adventure.png",
 		"link": "https://jontopielski.itch.io/castle-game-jam-text-adventure"
@@ -33,11 +38,6 @@
 		"name": "Portal Bot",
 		"image_location": "game-covers/portal-bot.png",
 		"link": "https://jontopielski.itch.io/portal-bot"
-	},
-	{
-		"name": "Spinny Discs",
-		"image_location": "game-covers/spinny-discs.png",
-		"link": "https://jontopielski.itch.io/spinny-discs"
 	},
 	{
 		"name": "This Call May Be Recorded",
