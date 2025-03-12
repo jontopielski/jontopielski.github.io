@@ -51,10 +51,10 @@ For the purging, I decided to go with a very simple custom "particle" system - b
 
 I still didn't know if purging a drawing would actually make you feel better. I couldn't test the theory until the project was basically done. For all I knew, it could have done absolutely nothing or maybe even made things worse. But yet again, I tested it myself and somehow it worked and made me feel better, even if a little bit.
 
-In all honesty, I thought nobody would play this game or get it and I even debated releasing it on an anonymous account, out of fear. My criteria was if one person was helped even to the smallest degree, it will have been worth putting out. And thankfully, I succeeded in that at least several people claimed to have been helped by the project:
+In all honesty, I thought nobody would play this game or get it and I even debated releasing it on an anonymous account. My criteria was if one person was helped even to the smallest degree, it will have been worth putting out. And thankfully, I succeeded in that at least several people seemed to have been helped by the project:
 
 <div style="text-align: center;">
     <img class="artPanel" src="posts\11-therapy-game\comments.png" width="75%">
 </div>
 
-Finally, I attempted to make music for this project, which I'm pretty bad at. But if you want to give it a listen, the two very short (and simple) songs can be found here: [microtherapy ost](https://jontopielski.bandcamp.com/album/microtherapy-for-when-you-overthink-a-comment-you-made)
+Finally, I attempted to make music for it, which I'm pretty bad at. But if you want to give it a listen, the two very short (and simple) songs can be found here: [microtherapy ost](https://jontopielski.bandcamp.com/album/microtherapy-for-when-you-overthink-a-comment-you-made)
