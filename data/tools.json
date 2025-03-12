@@ -10,6 +10,11 @@
 		"link": "https://github.com/jontopielski/aseprite-stacked-sprite-visualizer"
 	},
 	{
+		"name": "microtherapy for when you overthink a comment you made",
+		"image_location": "game-covers/microtherapy.png",
+		"link": "https://jontopielski.itch.io/microtherapy"
+	},
+	{
 		"name": "Desktop Daemon",
 		"image_location": "game-covers/desktop-daemon.png",
 		"link": "https://jontopielski.itch.io/desktop-daemon"
