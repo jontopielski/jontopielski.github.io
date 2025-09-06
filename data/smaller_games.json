@@ -40,13 +40,13 @@
 		"link": "https://jontopielski.itch.io/portal-bot"
 	},
 	{
+		"name": "Cave Buster",
+		"image_location": "game-covers/cave-buster.png",
+		"link": "https://jontopielski.itch.io/cave-buster"
+	},
+	{
 		"name": "This Call May Be Recorded",
 		"image_location": "game-covers/this-call-may-be-recorded.png",
 		"link": "https://jontopielski.itch.io/this-call-may-be-recorded"
-	},
-	{
-		"name": "A Midclubber Night's Dream",
-		"image_location": "game-covers/a-midclubber-nights-dream.png",
-		"link": "https://jontopielski.itch.io/a-midclubber-nights-dream"
 	}
 ]

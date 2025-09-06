@@ -15,6 +15,11 @@
 		"link": "https://jontopielski.itch.io/feather-park"
 	},
 	{
+		"name": "orbo",
+		"image_location": "game-covers/orbo.png",
+		"link": "https://jontopielski.itch.io/orbo"
+	},
+	{
 		"name": "Into the Deep Web",
 		"image_location": "game-covers/into-the-deep-web.png",
 		"link": "https://jontopielski.itch.io/into-the-deep-web"
@@ -33,11 +38,6 @@
 		"name": "Echo Chamber",
 		"image_location": "game-covers/echo-chamber.png",
 		"link": "https://jontopielski.itch.io/echo-chamber"
-	},
-	{
-		"name": "Cave Buster",
-		"image_location": "game-covers/cave-buster.png",
-		"link": "https://jontopielski.itch.io/cave-buster"
 	},
 	{
 		"name": "Puzzle Sigma",
